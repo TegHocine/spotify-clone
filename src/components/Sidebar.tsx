@@ -40,7 +40,7 @@ const Sidebar = () => {
   return (
     <>
       {/* desktop */}
-      <div className='hidden md:flex flex-col  py-10 px-4 w-60'>
+      <div className='hidden md:flex flex-col  py-10 px-4 w-60 bg-gray-900/40'>
         <img src={logo} alt='logo' className='w-full h-14 object-contain' />
         <NavLinks />
       </div>
@@ -59,7 +59,7 @@ const Sidebar = () => {
         )}
       </div>
       <div
-        className={`absolute top-0 h-screen w-2/3  backdrop-blur-lg z-10 p-6 md:hidden transition-all duration-200 ${
+        className={`absolute top-0 h-screen w-2/3  backdrop-blur-lg z-10 p-6 md:hidden transition-all duration-200 bg-gray-900/40 ${
           mobileMenuOpen ? 'left-0' : '-left-full'
         }`}>
         <img src={logo} alt='logo' className='w-full h-14 object-contain' />

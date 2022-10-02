@@ -1,3 +1,5 @@
 import Sidebar from './Sidebar'
+import SearchBar from './SearchBar'
+import Header from './Header'
 
-export { Sidebar }
+export { Sidebar, SearchBar, Header }

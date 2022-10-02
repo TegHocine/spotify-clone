@@ -1,7 +1,10 @@
-import React from 'react'
-
+import { Header } from '../components'
 const Discover = () => {
-  return <div>Discover</div>
+  return (
+    <div>
+      <Header name={'Discover'} />
+    </div>
+  )
 }
 
 export default Discover

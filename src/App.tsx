@@ -1,5 +1,6 @@
 import { Routes, Route } from 'react-router-dom'
 import { Sidebar } from './components'
+import { SearchBar } from './components'
 import {
   AroundYou,
   ArtistDetails,
@@ -14,7 +15,8 @@ const App = () => {
   return (
     <div className='bg-gradient-to-r from-gray-900 to-teal-900 min-h-screen flex text-gray-400'>
       <Sidebar />
-      <div>
+      <div className='px-4'>
+        <SearchBar />
         <Routes>
           <Route path='/' element={<Discover />} />
           <Route path='/top-artists' element={<TopArtists />} />
