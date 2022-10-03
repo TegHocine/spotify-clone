@@ -15,7 +15,7 @@ const App = () => {
   return (
     <div className='bg-gradient-to-r from-gray-900 to-teal-900 min-h-screen flex text-gray-400'>
       <Sidebar />
-      <div className='px-4'>
+      <div className='px-4 w-full'>
         <SearchBar />
         <Routes>
           <Route path='/' element={<Discover />} />

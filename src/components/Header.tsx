@@ -1,5 +1,5 @@
 const Header = ({ name }: { name: string }) => {
-  return <h1 className='text-white font-bold text-2xl'>{name}</h1>
+  return <h1 className='font-bold text-3xl text-white text-left'>{name}</h1>
 }
 
 export default Header
