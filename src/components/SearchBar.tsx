@@ -18,7 +18,9 @@ const SearchBar = () => {
       autoComplete='off'
       className='p-2 text-gray-400 focus-within:text-gray-600 flex items-center'>
       <label htmlFor='search-field' className='bg-transparent  py-3 gap-2 '>
-        <HiSearch aria-hidden='true' className='h-6 w-6' />
+        <button type='submit'>
+          <HiSearch aria-hidden='true' className='h-6 w-6' />
+        </button>
       </label>
       <input
         type='search-field'
