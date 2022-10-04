@@ -22,10 +22,10 @@ const songCard = ({ song, isPlaying, activeSong, data, i }: SongCardProps) => {
     dispatch(playPause(true))
   }
   return (
-    <div className='bg-teal-900/80 p-3 rounded-lg shadow-md w-56'>
-      <div className='relative w-full h-56 group'>
+    <div className='bg-teal-800/60 p-3 rounded-lg shadow-md w-52'>
+      <div className='relative w-full h-52 group'>
         <div
-          className={`absolute inset-0 justify-center items-center bg-black bg-opacity-50 group-hover:flex ${
+          className={`absolute inset-0 justify-center items-center bg-black bg-opacity-50 group-hover:flex rounded-lg transition-all duration-200 ease-linear ${
             activeSong?.title === song.title
               ? 'flex bg-black bg-opacity-70'
               : 'hidden'
