@@ -1,5 +1,6 @@
+import { useEffect } from 'react'
 import { useSelector } from 'react-redux'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useLocation } from 'react-router-dom'
 import { SearchBar, Sidebar, MusicPlayer, TopPlay } from './components'
 import {
   AroundYou,
@@ -12,6 +13,17 @@ import {
 } from './pages'
 
 const App = () => {
+  const { pathname } = useLocation()
+
+  console.log(pathname)
+  useEffect(() => {
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
+    })
+  }, [pathname])
+
   const { activeSong } = useSelector((state: any) => state.player)
   return (
     <div className='relative flex bg-gradient-to-r from-gray-900 to-teal-900 text-gray-400'>
