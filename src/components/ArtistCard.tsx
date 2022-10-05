@@ -9,7 +9,7 @@ const ArtistCard = ({ track }: { track: any }) => {
       <img
         alt='song_img'
         src={track?.images?.coverart}
-        className='w-full h-56 rounded-lg'
+        className='w-full rounded-lg'
       />
       <p className='mt-4 font-semibold text-lg text-white truncate'>
         {track?.subtitle}

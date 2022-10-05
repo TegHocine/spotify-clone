@@ -1,6 +1,10 @@
-import React from 'react'
+type Track = {
+  isPlaying: boolean
+  isActive: boolean
+  activeSong: any
+}
 
-const Track = ({ isPlaying, isActive, activeSong }) => (
+const Track = ({ isPlaying, isActive, activeSong }: Track) => (
   <div className='flex-1 flex items-center justify-start w-[50%]'>
     <div
       className={`hidden sm:flex h-16 w-16 mr-4  items-center justify-center`}>
