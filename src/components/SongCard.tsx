@@ -23,7 +23,7 @@ const songCard = ({ song, isPlaying, activeSong, data, i }: SongCardProps) => {
   }
   return (
     <div className='bg-teal-800/60 p-3 rounded-lg shadow-md w-52'>
-      <div className='relative w-full h-52 group'>
+      <div className='relative w-full h-46 group'>
         <div
           className={`absolute inset-0 justify-center items-center bg-black bg-opacity-50 group-hover:flex rounded-lg transition-all duration-200 ease-linear ${
             activeSong?.title === song.title
@@ -41,7 +41,7 @@ const songCard = ({ song, isPlaying, activeSong, data, i }: SongCardProps) => {
         <img
           alt='song_img'
           src={song.images?.coverart}
-          className='w-full h-full rounded-lg'
+          className='w-full h-full object-cover rounded-lg'
         />
       </div>
       <div className='mt-4 flex flex-col'>
