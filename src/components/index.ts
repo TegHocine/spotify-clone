@@ -7,7 +7,7 @@ import TopPlay from './TopPlay'
 import SongCard from './SongCard'
 import Loader from './Loader'
 import ArtistCard from './ArtistCard'
-
+import DetailsHeader from './DetailsHeader'
 export {
   Sidebar,
   SearchBar,
@@ -17,5 +17,6 @@ export {
   TopPlay,
   SongCard,
   Loader,
-  ArtistCard
+  ArtistCard,
+  DetailsHeader
 }

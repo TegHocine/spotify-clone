@@ -15,7 +15,6 @@ import {
 const App = () => {
   const { pathname } = useLocation()
 
-  console.log(pathname)
   useEffect(() => {
     window.scroll({
       top: 0,
