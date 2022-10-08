@@ -8,6 +8,7 @@ import SongCard from './SongCard'
 import Loader from './Loader'
 import ArtistCard from './ArtistCard'
 import DetailsHeader from './DetailsHeader'
+import RelatedSongs from './RelatedSongs'
 export {
   Sidebar,
   SearchBar,
@@ -18,5 +19,6 @@ export {
   SongCard,
   Loader,
   ArtistCard,
-  DetailsHeader
+  DetailsHeader,
+  RelatedSongs
 }

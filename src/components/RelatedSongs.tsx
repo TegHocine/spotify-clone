@@ -16,25 +16,28 @@ const RelatedSongs = ({
   activeSong,
   handlePauseClick,
   handlePlayClick
-}: RelatedSongsProps) => (
-  <div className='flex flex-col'>
-    <h1 className='font-bold text-3xl text-white'>Related Songs:</h1>
+}: RelatedSongsProps) => {
+  console.log(data)
+  return (
+    <div className='flex flex-col'>
+      <h1 className='font-bold text-3xl text-white'>Related Songs:</h1>
 
-    <div className='mt-6 w-full flex flex-col'>
-      {data?.map((song: any, i: number) => (
-        <SongBar
-          key={`${artistId}-${song.key}-${i}`}
-          song={song}
-          i={i}
-          artistId={artistId}
-          isPlaying={isPlaying}
-          activeSong={activeSong}
-          handlePauseClick={handlePauseClick}
-          handlePlayClick={handlePlayClick}
-        />
-      ))}
+      <div className='mt-6 w-full flex flex-col'>
+        {data?.map((song: any, i: number) => (
+          <SongBar
+            key={`${artistId}-${song.key}-${i}`}
+            song={song}
+            i={i}
+            artistId={artistId}
+            isPlaying={isPlaying}
+            activeSong={activeSong}
+            handlePauseClick={handlePauseClick}
+            handlePlayClick={handlePlayClick}
+          />
+        ))}
+      </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default RelatedSongs
