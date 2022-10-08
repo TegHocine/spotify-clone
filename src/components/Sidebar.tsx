@@ -1,5 +1,5 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { useState } from 'react'
+import { NavLink, useParams } from 'react-router-dom'
 import {
   HiOutlineHashtag,
   HiOutlineHome,
@@ -19,14 +19,17 @@ const links = [
 ]
 
 const NavLinks = ({ handleClick }: { handleClick?: () => void }) => {
+  const param = useParams()
+  console.log(param)
   return (
     <div className='mt-10'>
       {links.map((link) => (
         <NavLink
           key={link.name}
           to={link.to}
-          className='flex gap-1.5 justify-start items-center text-sm font-medium my-8 hover:text-teal-400'
-          onClick={() => handleClick && handleClick()}>
+          className='flex gap-1.5 justify-start items-center text-sm font-medium my-8 hover:text-teal-500'
+          onClick={() => handleClick && handleClick()}
+          end>
           <link.icon className='h-6 w-6' />
           {link.name}
         </NavLink>
@@ -41,7 +44,11 @@ const Sidebar = () => {
     <>
       {/* desktop */}
       <div className='hidden md:flex flex-col  py-10 px-4 w-60 bg-gray-900/40'>
-        <img src={logo} alt='logo' className='w-full h-14 object-contain' />
+        <img
+          src={logo}
+          alt='logo'
+          className='w-full h-14 object-contain'
+        />
         <NavLinks />
       </div>
       {/* mobile */}
@@ -62,7 +69,11 @@ const Sidebar = () => {
         className={`absolute top-0 h-screen w-2/3  backdrop-blur-lg z-10 p-6 md:hidden transition-all duration-200 bg-gray-900/40 ${
           mobileMenuOpen ? 'left-0' : '-left-full'
         }`}>
-        <img src={logo} alt='logo' className='w-full h-14 object-contain' />
+        <img
+          src={logo}
+          alt='logo'
+          className='w-full h-14 object-contain'
+        />
         <NavLinks handleClick={() => setMobileMenuOpen(false)} />
       </div>
     </>
