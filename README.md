@@ -1,6 +1,3 @@
-# spotify-clone
-Music app made with reactjs, redux, tailwind, typescript  using rapideApi 
-Following JavaScript Mastery
 
 ![home](https://user-images.githubusercontent.com/61586802/195142476-e96968a6-ea1e-4512-92bd-647810db9683.png)
 
